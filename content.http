@@ -1,0 +1,41 @@
+###
+GET http://localhost:8080/api/content
+
+
+###
+GET http://localhost:8080/api/content
+
+
+###
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "",
+    "description": "Teste 4",
+    "status": "COMPLETED",
+    "contentType": "VIDEO",
+    "dateCreated": "2023-03-20T15:20:59.6712307",
+    "dateUpdated": null,
+    "url": ""
+}
+
+###
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "MODIFICANDO O VALOR DA PRIMEIRA!",
+  "description": "AAAAAAAAAAAAAAAAA",
+  "status": "COMPLETED",
+  "contentType": "VIDEO",
+  "dateCreated": "2023-03-20T15:20:59.6712307",
+  "dateUpdated": null,
+  "url": ""
+}
+
+###
+
+DELETE http://localhost:8080/api/content/1
